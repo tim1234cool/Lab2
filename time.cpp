@@ -23,4 +23,28 @@ Time::Time() {
     _time.second = 0;
 }
 
+Time::Time(int hour) {
+    _time.minute = 0;
+    _time.second = 0; 
+
+
+
+    if (hour == 24){
+        _time.hour = 0;
+    }
+    if (hour > 24){
+        int h1 = hour - 24;
+        _time.hour = h1;
+    }
+
+    if (hour < 0){
+        return;
+    }
+    if (hour >= 0 && hour <24){
+        _time.hour = hour;
+    }
+    
+}
+
+
 //...
