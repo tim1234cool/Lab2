@@ -1,6 +1,6 @@
 #include "time.hpp"
 #include <cassert>
-#include <iostream>
+// #include <iostream>
 
 int main(){
     std::cout << "Begin unit test for Time::Time(int hour)\n";
